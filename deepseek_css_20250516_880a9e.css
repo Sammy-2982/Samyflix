@@ -1,0 +1,97 @@
+body {
+    color: #f0f0f0; /* Branco mais suave */
+    background: #121212; /* Preto levemente acinzentado */
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px #2a7ae4; /* Azul mais vibrante */
+    padding: 20px;
+    font-size: 32px;
+    color: #2a7ae4;
+    text-align: center; /* Centralizado */
+    text-transform: uppercase; /* Estilo "streaming" */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+}
+
+.chamada {
+    background: linear-gradient(135deg, #b89cd5 0%, #2a7ae4 100%); /* Gradiente moderno */
+    padding: 80px 5%; /* Padding lateral responsivo */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinhamento vertical */
+    flex-wrap: wrap; /* Responsivo para mobile */
+    gap: 40px; /* Espaço entre elementos */
+}
+
+.chamada-texto {
+    max-width: 500px; /* Limita largura do texto */
+}
+
+h1 {
+    font-size: 48px; /* Maior destaque */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra sutil */
+}
+
+p {
+    font-size: 20px;
+    opacity: 0.9; /* Leve transparência */
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px; /* Mais espaço entre imagens */
+    padding: 20px 0; /* Espaço vertical */
+    scrollbar-width: thin; /* Estilo da barra de rolagem */
+    scrollbar-color: #2a7ae4 #121212;
+}
+
+.categoria {
+    padding: 0 5%; /* Padding lateral responsivo */
+    margin-top: 50px;
+}
+
+.categoria-videos img {
+    height: 250px; /* Imagens maiores */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+}
+
+.categoria-videos img:hover {
+    opacity: 1;
+    border: 3px solid #2a7ae4; /* Azul ao invés de verde */
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.categoria h2 {
+    color: #2a7ae4;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2a7ae4; /* Destaque lateral */
+    padding-left: 15px;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .chamada {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+}
