@@ -11,4 +11,4 @@ Para acessar o código referente às aulas, clique no seletor `main` do reposit�
 
 ## Notas e créditos
 Feito por Guilherme Silveira, instrutor e fundador da Alura.
-Editado POr Sammy
+Editado Por Sammy
